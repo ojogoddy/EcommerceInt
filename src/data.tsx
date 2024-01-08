@@ -13,7 +13,7 @@ import k from "./assets/k.jpeg"
 import l from "./assets/l.jpeg"
 import m from "./assets/m.jpeg"
 
-export const alls:any = [
+export const alls = [
     {
         id: 1,
         name: 'Classic Rose Brown Leather',

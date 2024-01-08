@@ -19,6 +19,8 @@ const DetailPage = () => {
     return <div>Item not found</div>;
   }
 
+  console.log(selectedObject)
+
   return (
     <div className="flex items-center justify-center mb-[20px]">
    
@@ -62,7 +64,7 @@ const DetailPage = () => {
           <div className="w-[90%]   flex flex-col  justify-center detailFunction mt-[50px]">
             <NavLink to="/cart">
               <button   onClick={() => {
-                dispatch(addToCart(selectedObject?.data?.data));
+                dispatch(addToCart(selectedObject));
               }} className="w-[150px] h-[45px] bg-[#4DC4CC] text-white rounded-[8px] font-bold ">
                 Add to Cart
               </button>
