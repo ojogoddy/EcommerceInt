@@ -27,6 +27,10 @@ export const Index = createBrowserRouter([
                 path: "cart",
                 element: <Cart/>
             },
+            {
+                path: "auth",
+                element: <Cart/>
+            },
         ]
     },
     
