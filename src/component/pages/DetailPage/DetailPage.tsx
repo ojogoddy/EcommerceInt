@@ -36,7 +36,7 @@ const DetailPage = () => {
         <div className="w-[48%]   flex items-center justify-center flex-col  detailDetail ">
           <div className="w-[90%] flex  flex-col gap-5 detailInfo">
             <p className="font-semi-bold text-xl text-black ">
-              {alls?.name}
+              
             </p>
             <p className="font-bold text-4xl detailInfo1 ">{selectedObject?.name} </p>
             <div className="flex flex-wrap gap-[20px]">
@@ -64,7 +64,7 @@ const DetailPage = () => {
           <div className="w-[90%]   flex flex-col  justify-center detailFunction mt-[50px]">
             <NavLink to="/cart">
               <button   onClick={() => {
-                dispatch(addToCart(selectedObject));
+                // dispatch(addToCart(selectedObject));
               }} className="w-[150px] h-[45px] bg-[#4DC4CC] text-white rounded-[8px] font-bold ">
                 Add to Cart
               </button>
