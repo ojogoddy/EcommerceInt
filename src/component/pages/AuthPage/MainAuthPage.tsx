@@ -37,7 +37,7 @@ const MainAuthPage = () => {
 
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-0"></div>
         </div>
-        <div className="bg-[brown] w-[72%] h-[100%]">
+        <div className="bg-[white] w-[72%] h-[100%] flex items-center justify-center ">
       {
         show1? <Login/>:null
       }
