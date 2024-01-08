@@ -9,12 +9,11 @@ export interface userData {
 }
 
 interface cartData {
-  title: string;
-  description: string;
+  name: string;
   price: number;
-  category: string;
-  _id: string;
+  image: string;
   cartQuantity: number;
+  _id?: string;
 }
 
 const initialState = {
