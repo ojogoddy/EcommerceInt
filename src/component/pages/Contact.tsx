@@ -5,8 +5,8 @@ import { SlLocationPin } from "react-icons/sl";
 import { MdOutlineMail } from "react-icons/md";
 const ContactUs = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
-<div className="w-[50%] h-[100%] flex justify-center items-center flex-col flex-wrap mr-[30px]">
+    <div className="w-full h-screen flex justify-between items-center p-[40px]">
+<div className="w-[45%] h-[100%] flex justify-center items-center flex-col flex-wrap ml-[30px]">
 <div className="flex justify-between w-[100%]">
    <div className="pl-[10px] ">
    <div className="text-[45px] text-[#CC3333] mb-[20px]"><IoIosPhonePortrait /></div>
