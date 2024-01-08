@@ -34,7 +34,7 @@ const Header:React.FC = () => {
             <Link to="/">
             <img src={logo} alt="" /></Link>
             <div className="flex items-center gap-x-4 text-[1.25rem]">
-              <Link to="">
+              <Link to="/auth-page">
                 <div className=" flex items-center gap-x-2 ">
                   <FaUser />
                   Log in
