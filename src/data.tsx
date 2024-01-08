@@ -1,6 +1,17 @@
 import React from 'react'
 import a from "./assets/a.jpeg"
 import b from "./assets/b.jpeg"
+import c from "./assets/c.jpeg"
+import d from "./assets/d.jpeg"
+import e from "./assets/e.jpeg"
+import f from "./assets/f.jpeg"
+import g from "./assets/g.jpeg"
+import h from "./assets/h.jpeg"
+import i from "./assets/i.jpeg"
+import j from "./assets/j.jpeg"
+import k from "./assets/k.jpeg"
+import l from "./assets/l.jpeg"
+import m from "./assets/m.jpeg"
 
 export const alls:any = [
     {
@@ -18,67 +29,67 @@ export const alls:any = [
     {
         id: 3,
         name: 'Gold Bracelets',
-        image: "./assets/c.jpeg",
+        image: c,
         price: "$16.49"
     },
     {
         id: 4,
         name: 'Gold Minimal Watch',
-        image: "./assets/d.jpeg",
+        image: d,
         price: "$16.49"
     },
     {
         id: 5,
         name: 'Men Black Classic',
-        image: "./assets/e.jpeg",
+        image: e,
         price: "$16.49"
     },
     {
         id: 6,
         name: 'Nail Silver Pendant',
-        image: "./assets/f.jpeg",
+        image: f,
         price: "$16.49"
     },
     {
         id: 7,
         name: 'Nail Tubula Choker',
-        image: "./assets/g.jpeg",
+        image: g,
         price: "$16.49"
     },
     {
         id: 8,
         name: 'Pilgrim Double Disc',
-        image: "./assets/h.jpeg",
+        image: h,
         price: "$16.49"
     },
     {
         id: 9,
         name: 'Queen Silver Ring',
-        image: "./assets/i.jpeg",
+        image: i,
         price: "$16.49"
     },
     {
         id: 10,
         name: 'Rings With Ruby Gem',
-        image: "./assets/j.jpeg",
+        image: j,
         price: "$16.49"
     },
     {
         id: 11,
         name: 'Rose Black Gold',
-        image: "./assets/k.jpeg",
+        image: k,
         price: "$16.49"
     },
     {
         id: 12,
         name: 'Shape Gold Earring',
-        image: "./assets/l.jpeg",
+        image: l,
         price: "$16.49"
     },
     {
         id: 13,
         name: 'Simple gold Necklace',
-        image: "./assets/m.jpeg",
+        image: m,
         price: "$16.49"
     },
   
