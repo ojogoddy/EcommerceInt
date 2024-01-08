@@ -9,6 +9,7 @@ import {  useAppSelector } from "../../Global/Store";
 const Cart = () => {
   // const dispatch = UseAppDispatch();
   const readCart = useAppSelector((state) => state.cart);
+console.log(readCart[0]?.name)
 
   return (
     <div>
