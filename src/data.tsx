@@ -1,4 +1,5 @@
-import React from 'react'
+
+import { cartData } from "./Global/ReduxState"
 import a from "./assets/a.jpeg"
 import b from "./assets/b.jpeg"
 import c from "./assets/c.jpeg"
@@ -13,7 +14,7 @@ import k from "./assets/k.jpeg"
 import l from "./assets/l.jpeg"
 import m from "./assets/m.jpeg"
 
-export const alls:any = [
+export const alls:cartData = [
     {
         id: 1,
         name: 'Classic Rose Brown Leather',
