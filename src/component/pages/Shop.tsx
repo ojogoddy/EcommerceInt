@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import {Link, useParams} from "react-router-dom"
+import {Link} from "react-router-dom"
 import { FaAngleRight } from "react-icons/fa";
 import { alls } from '../../data';
 
 const Shop = () => {
   const all = ["All", "Men", "Women"]
   const [active, setActive] = useState(0)
-  const {id} = useParams()
+
   return (
     <div>
       <div className="text-[4rem] font-extrabold text-center">Shop</div>
