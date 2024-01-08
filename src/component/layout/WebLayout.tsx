@@ -5,7 +5,9 @@ import Footer from '../block/Footer'
 
 const WebLayout:React.FC = () => {
   return (
-    <div>
+    <div
+    className='overflow-hidden'
+    >
         <Header/>
         <Outlet/>
         <Footer/>
