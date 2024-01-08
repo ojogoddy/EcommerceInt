@@ -1,10 +1,10 @@
 import { NavLink, useParams } from "react-router-dom";
 import { alls } from "../../../data";
-import { UseAppDispatch } from "../../../Global/Store";
-import { addToCart } from "../../../Global/ReduxState";
+// import { UseAppDispatch } from "../../../Global/Store";
+// import { addToCart } from "../../../Global/ReduxState";
 const DetailPage = () => {
  
-  const dispatch = UseAppDispatch();
+  // const dispatch = UseAppDispatch();
   const { id } = useParams();
   const itemId = id?parseInt(id, 10): NaN; // Convert id to integer
 
