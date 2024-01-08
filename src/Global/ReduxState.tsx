@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { PayloadAction } from "@reduxjs/toolkit";
 
-interface userData {
+export interface userData {
   name: string;
   email: string;
   password: string;
-  _id: string;
+  _id?: string;
 }
 
 interface cartData {
