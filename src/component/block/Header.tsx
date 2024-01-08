@@ -45,7 +45,7 @@ const Header:React.FC = () => {
               <div className=" flex items-center gap-x-2">
                 <div className="relative text-[30px]">
                 <AiOutlineShoppingCart/>
-                <div className="absolute bg-red-500 w-5 h-5 left-4 top-4 flex items-center justify-center rounded-full mx-auto text-white text-[0.9rem] ">0</div>
+                <div className="absolute bg-red-600 w-5 h-5 left-4 top-4 flex items-center justify-center rounded-full mx-auto text-white text-[0.9rem] ">0</div>
                 </div>
                 $0.00
               </div></Link>
