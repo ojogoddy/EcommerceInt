@@ -8,7 +8,7 @@ import {  useAppSelector } from "../../Global/Store";
 
 const Cart = () => {
   // const dispatch = UseAppDispatch();
-  // const readCart = useAppSelector((state) => state.cart);
+  const readCart = useAppSelector((state) => state.cart);
 
   return (
     <div>
@@ -23,7 +23,7 @@ const Cart = () => {
 
             <div className="mt-8">
               <div>
-                {/* {readCart?.map((cart) => ( */}
+                {readCart?.map((cart) => (
                   <ul className="space-y-4">
                     <li className="flex items-center gap-3">
                       <img
@@ -87,7 +87,7 @@ const Cart = () => {
                       </div>
                     </li>
                   </ul>
-                 {/* ))} */}
+                ))}
               </div>
 
               <div className="mt-8 flex justify-end border-t border-gray-100 pt-8">
