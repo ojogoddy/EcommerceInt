@@ -1,32 +1,50 @@
 import { useState } from "react";
+import Login from "./Login";
+import SignUp from "./SignUp";
 
 const MainAuthPage = () => {
   const [show1, setShow1] = useState<boolean>(true);
   const [show2, setShow2] = useState<boolean>(false);
 
+  const ToggleLogin = () => {
+    setShow1(!show1);
+    setShow2(false);
+  };
+
+  const ToggleRegister = () => {
+    setShow1(false);
+    setShow2(!show2);
+  };
+
   return (
-    <div className="bg-[#212121] h-[100vh] w-[100%] overflow-hidden flex items-center justify-center">
-      <div className="bg-[peru] h-[95%] w-[85%] rounded-[15px]  flex items-center justify-between">
+    <div className="bg-[#666666] h-[100vh] w-[100%] overflow-hidden flex items-center justify-center">
+      <div className="h-[95%] w-[85%] rounded-[35px]  flex items-center justify-between">
         <div
-          className="h-[100%] w-[28%] bg-cover bg-right-bottom relative flex items-center justify-center"
+          className="h-[100%] w-[28%] bg-cover bg-right-bottom relative flex items-center justify-center rounded-[10px]"
           style={{
             backgroundImage:
               "url(https://drfurithemes.com/mrbara15/wp-content/uploads/sites/37/2023/01/mr-login-popup.jpg)",
           }}
         >
           <div className="z-20 text-[white] absolute flex items-center flex-col ">
-            <div className="text-[40px] hover:cursor-pointer">Log in</div>
-            <div className="text-[40px] hover:cursor-pointer">Register</div>
+            <div className="text-[40px] hover:cursor-pointer" 
+            onClick={ToggleLogin}
+            >Log in</div>
+            <div className="text-[40px] hover:cursor-pointer"
+            onClick={ToggleRegister}
+            >Register</div>
           </div>
 
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-0"></div>
         </div>
         <div className="bg-[brown] w-[72%] h-[100%]">
-          {" "}
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-          tenetur assumenda magni. Excepturi ab odit fugit consequatur iste,
-          officia ipsam? Ipsam, quod. Et, nesciunt maxime nam suscipit
-          repudiandae dolorum rem?
+      {
+        show1? <Login/>:null
+      }
+      {
+        show2? <SignUp/>:null
+      }
+          
         </div>
       </div>
     </div>
