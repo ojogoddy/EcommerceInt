@@ -20,7 +20,6 @@ const Header:React.FC = () => {
         return <Shop/>
       case 2:
         return <Contact/>
-      
     }
   }
   
@@ -52,15 +51,28 @@ const Header:React.FC = () => {
             </div>
         </div>
         <div className="">
-            <div className='flex items-center justify-center space-x-10 my-8 text-[1.2rem]'>
+          <div className="flex items-center justify-center space-x-10 my-8 text-[1.2rem]">
+            <Link to="/">
+              <div className="">HOME</div>
+            </Link>
+            <Link to="shop">
+              <div className="">SHOP</div>
+            </Link>
+            <Link to="contact">
+              <div className="">CONTACT</div>
+            </Link>
+          </div>
+        </div>
+        <div className="">
+            {/* <div className='flex items-center justify-center space-x-10 my-8 text-[1.2rem]'>
               {home?.map((prop, index)=>(
                 <span key={index}
                 className={`cursor-pointer ${active===index ? "text-gray-400": "text-black"}`} onClick={()=>setActive(index)}>
                   {prop}
                 </span>
               ))}
-            </div>
-            <div className="">{display()}</div>
+            </div> */}
+            {/* <div className="">{display()}</div> */}
         </div>
     </div>
   )

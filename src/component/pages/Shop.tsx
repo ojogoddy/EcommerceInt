@@ -31,7 +31,7 @@ const Shop = () => {
       </div>
       <div className=" flex flex-wrap  justify-center gap-x-6">
         {alls?.map((prop:any) =>(
-          <div key={prop.id} className="">
+          <div key={prop.id} className="pb-5">
             <div className="w-[300px] h-[300px]">
           <img src={prop.image} alt="" className='w-full h-full object-cover'/>
         </div>
