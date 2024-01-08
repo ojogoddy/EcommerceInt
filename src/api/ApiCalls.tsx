@@ -14,3 +14,11 @@ export const createUser = async ({ name, email, password }:userData) => {
     })
     .then((res) => res.data);
 };
+export const loginUsers = async ({  email, password }:userData) => {
+  await axios
+    .post(`${endPoint}/users/login`, {
+      email,
+      password,
+    })
+    .then((res) => res.data);
+};
