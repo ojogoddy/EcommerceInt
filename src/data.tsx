@@ -1,4 +1,4 @@
-import React from 'react'
+
 import a from "./assets/a.jpeg"
 import b from "./assets/b.jpeg"
 import c from "./assets/c.jpeg"
@@ -24,84 +24,194 @@ export const alls:any = [
         id: 2,
         name: 'Drop Pendant Necklace',
         image: b,
-        price: "$16.49"
+        price: "$26.49"
     },
     {
         id: 3,
         name: 'Gold Bracelets',
         image: c,
-        price: "$16.49"
+        price: "$36.49"
     },
     {
         id: 4,
         name: 'Gold Minimal Watch',
         image: d,
-        price: "$16.49"
+        price: "$46.49"
     },
     {
         id: 5,
         name: 'Men Black Classic',
         image: e,
-        price: "$16.49"
+        price: "$56.49"
     },
     {
         id: 6,
         name: 'Nail Silver Pendant',
         image: f,
-        price: "$16.49"
+        price: "$66.49"
     },
     {
         id: 7,
         name: 'Nail Tubula Choker',
         image: g,
-        price: "$16.49"
+        price: "$76.49"
     },
     {
         id: 8,
         name: 'Pilgrim Double Disc',
         image: h,
-        price: "$16.49"
+        price: "$86.49"
     },
     {
         id: 9,
         name: 'Queen Silver Ring',
         image: i,
-        price: "$16.49"
+        price: "$96.49"
     },
     {
         id: 10,
         name: 'Rings With Ruby Gem',
         image: j,
-        price: "$16.49"
+        price: "$11.49"
     },
     {
         id: 11,
         name: 'Rose Black Gold',
         image: k,
-        price: "$16.49"
+        price: "$12.49"
     },
     {
         id: 12,
         name: 'Shape Gold Earring',
         image: l,
-        price: "$16.49"
+        price: "$13.49"
     },
     {
         id: 13,
         name: 'Simple gold Necklace',
         image: m,
+        price: "$14.49"
+    },
+    {
+        id: 14,
+        name: 'Classic Rose Brown Leather',
+        image: a,
         price: "$16.49"
+    },
+    {
+        id: 15,
+        name: 'Drop Pendant Necklace',
+        image: b,
+        price: "$16.49"
+    },
+    {
+        id: 16,
+        name: 'Gold Bracelets',
+        image: c,
+        price: "$17.49"
     },
   
   ]
 
 export const men =[
-    {
-        
-    }
+    
+        {
+            id: 11,
+            name: 'Classic Rose Brown Leather',
+            image: a,
+            price: "$16.49"
+        },
+        {
+            id: 12,
+            name: 'Drop Pendant Necklace',
+            image: b,
+            price: "$26.49"
+        },
+        {
+            id: 13,
+            name: 'Gold Bracelets',
+            image: c,
+            price: "$36.49"
+        },
+        {
+            id: 14,
+            name: 'Gold Minimal Watch',
+            image: d,
+            price: "$46.49"
+        },
+        {
+            id: 15,
+            name: 'Men Black Classic',
+            image: e,
+            price: "$56.49"
+        },
+        {
+            id: 16,
+            name: 'Nail Silver Pendant',
+            image: f,
+            price: "$66.49"
+        },
+        {
+            id: 17,
+            name: 'Nail Tubula Choker',
+            image: g,
+            price: "$76.49"
+        },
+        {
+            id: 18,
+            name: 'Pilgrim Double Disc',
+            image: h,
+            price: "$86.49"
+        },
+    
 ]
 export const women =[
     {
-
-    }
+        id: 19,
+        name: 'Queen Silver Ring',
+        image: i,
+        price: "$96.49"
+    },
+    {
+        id: 20,
+        name: 'Rings With Ruby Gem',
+        image: j,
+        price: "$11.49"
+    },
+    {
+        id: 21,
+        name: 'Rose Black Gold',
+        image: k,
+        price: "$12.49"
+    },
+    {
+        id: 22,
+        name: 'Shape Gold Earring',
+        image: l,
+        price: "$13.49"
+    },
+    {
+        id: 23,
+        name: 'Simple gold Necklace',
+        image: m,
+        price: "$14.49"
+    },
+    {
+        id: 24,
+        name: 'Classic Rose Brown Leather',
+        image: a,
+        price: "$16.49"
+    },
+    {
+        id: 25,
+        name: 'Drop Pendant Necklace',
+        image: b,
+        price: "$16.49"
+    },
+    {
+        id: 26,
+        name: 'Gold Bracelets',
+        image: c,
+        price: "$17.49"
+    },
 ]

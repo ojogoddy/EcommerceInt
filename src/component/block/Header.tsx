@@ -1,29 +1,12 @@
-
-import React, { useState } from 'react'
+import React from 'react'
 import logo from "../../assets/logo.png"
 import {FaUser} from "react-icons/fa"
 import { FiSearch } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import {Link} from "react-router-dom"
-import Home from '../pages/Home';
-import Shop from '../pages/Shop';
-import Contact from '../pages/Contact';
 
-const Header:React.FC = () => {
-  const [active, setActive] = useState(0)
-  const home = ["HOME", "SHOP", "CONTACT"]
 
-  const display =()=>{
-    switch(active){
-      case 0:
-        return <Home/>
-      case 1:
-        return <Shop/>
-      case 2:
-        return <Contact/>
-    }
-  }
-  
+const Header:React.FC = () => { 
   return (
     <div>
         <div className='flex items-center justify-between mx-[9rem] py-[3rem] border-b-[1px] border-gray-300'>
@@ -64,17 +47,7 @@ const Header:React.FC = () => {
             </Link>
           </div>
         </div>
-        <div className="">
-            {/* <div className='flex items-center justify-center space-x-10 my-8 text-[1.2rem]'>
-              {home?.map((prop, index)=>(
-                <span key={index}
-                className={`cursor-pointer ${active===index ? "text-gray-400": "text-black"}`} onClick={()=>setActive(index)}>
-                  {prop}
-                </span>
-              ))}
-            </div> */}
-            {/* <div className="">{display()}</div> */}
-        </div>
+
     </div>
   )
 }

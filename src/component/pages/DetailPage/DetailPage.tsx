@@ -2,19 +2,18 @@ import { NavLink, useParams } from "react-router-dom";
 import { alls } from "../../../data";
 import { UseAppDispatch } from "../../../Global/Store";
 import { addToCart } from "../../../Global/ReduxState";
-// import { useState } from "react";
 const DetailPage = () => {
  
   const dispatch = UseAppDispatch();
   const { id } = useParams();
-  const itemId = parseInt(id, 10); // Convert id to integer
+  const itemId = id?parseInt(id, 10): NaN; // Convert id to integer
 
-  const getItemById = (id:any) => {
-    return alls.find((item) => item.id === itemId);
+  const getItemById = (id:number) => {
+    return alls.find((item:{ id: number}) => item.id === id);
   };
   console.log(itemId)
 
-  const selectedObject = getItemById(itemId);
+  const selectedObject = isNaN(itemId) ? undefined : getItemById(itemId);
 
   if (!selectedObject) {
     return <div>Item not found</div>;

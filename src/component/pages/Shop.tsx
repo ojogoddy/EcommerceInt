@@ -1,11 +1,26 @@
 import React, { useState } from 'react'
 import {Link} from "react-router-dom"
 import { FaAngleRight } from "react-icons/fa";
-import { alls } from '../../data';
 
-const Shop = () => {
+import All from '../All';
+import Women from '../Women';
+import Men from '../Men';
+
+const Shop:React.FC = () => {
   const all = ["All", "Men", "Women"]
   const [active, setActive] = useState(0)
+
+  const shopping = ()=>{
+    switch (active){
+      case 0:
+        return <All/>
+      case 1:
+        return <Men/>
+      case 2:
+        return <Women/>
+    }
+    return null
+  }
 
   return (
     <div>
@@ -30,21 +45,8 @@ const Shop = () => {
           </div>
         ))}
       </div>
-      <div className=" flex flex-wrap  justify-center gap-x-6">
-
-        {alls?.map((prop) =>(
-         <Link to= {`/detail/${prop?.id}`}>
-          <div key={prop.id} className="">
-            <div className="w-[300px] h-[300px]">
-          <img src={prop.image} alt="" className='w-full h-full object-cover'/>
-        </div>
-        <div className=" text-center text-[1.2rem] font-semibold">{prop.name}</div>
-        <div className="text-center font-light text-[1.1rem] text-gray-400">{prop.price}</div>
-          </div>
-         </Link>
-
-        ))}
-        
+      <div className=" flex flex-wrap  gap-y-6 justify-center gap-x-6">
+        <div className="">{shopping()}</div>
       </div>
     </div>
   )
