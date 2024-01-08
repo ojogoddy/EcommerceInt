@@ -29,7 +29,7 @@ export const Index = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "detail",
+        path: "detail/:id",
         element: <DetailPage />,
       },
     ],
