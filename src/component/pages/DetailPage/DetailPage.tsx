@@ -1,12 +1,15 @@
 import { NavLink } from "react-router-dom";
+import { alls } from "../../../data";
 
 const DetailPage = () => {
+  console.log(alls[0]?.name)
   return (
     <div className="flex items-center justify-center mb-[20px]">
+   
       <div className="w-[85%] py-[20px] mt-[30px]  bg-gray-300 rounded-[20px] flex justify-around items-center mainDefaultStyle">
         <div className="w-[40%] p-[20px] rounded-[10px]  bg-gray-200 flex justify-center items-center detailImageHolder ">
           <img
-            src="https://drfurithemes.com/mrbara15/wp-content/uploads/sites/37/2016/09/b1.jpg"
+            src= {alls?.image}
             alt=""
             className="w-[80%] h-[40%] rounded-[10px] object-cover detailImage"
           />
@@ -14,17 +17,17 @@ const DetailPage = () => {
 
         <div className="w-[48%]   flex items-center justify-center flex-col  detailDetail ">
           <div className="w-[90%] flex  flex-col gap-5 detailInfo">
-            <p className="font-semi-bold text-xl text-[#4DC4CC] ">
-              Famous Shop Store
+            <p className="font-semi-bold text-xl text-black ">
+              {alls?.name}
             </p>
-            <p className="font-bold text-4xl detailInfo1 ">Valeria</p>
+            <p className="font-bold text-4xl detailInfo1 ">{alls?.name} </p>
             <div className="flex flex-wrap gap-[20px]">
               <p className="font-semi-bold text-grey text-[15px] line-through">
-                <span className="text-grey  text-xl ">₦: 71</span>
+                <span className="text-grey  text-xl ">{alls?.price}</span>
               </p>
-              <p className="font-semi-bold text-grey text-[15px]">
+              {/* <p className="font-semi-bold text-grey text-[15px]">
                 <span className=" text-[#E5774B]  text-xl ">₦: 200</span>
-              </p>
+              </p> */}
             </div>
 
             <div className="text-[18px]">
