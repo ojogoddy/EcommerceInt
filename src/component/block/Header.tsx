@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+import React from "react";
+import { BsSearch } from "react-icons/bs";
+import { FaUser } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+const Header = () => {
+  return (
+    <div className="h-[60px] w-[100vw] flex items-center justify-between gap-[35px] bg-[white] p-5 overflow-hidden">
+      <div className="w-[250px] h-[40px] border-2 border-[black] flex items-center gap-5 p-2">
+        <BsSearch />
+        <input name="text" type="search" placeholder="Sesrch here" />
+      </div>
+      <div className="w-[250px] h-[40px]"></div>
+      <div className="w-[250px] h-[40px] flex items-center jus ">
+        <div className="">
+          <FaUser />
+        </div>
+        <div>
+          <FaCartShopping />
+=======
 import React, { useState } from 'react'
 import logo from "../../assets/logo.png"
 import {FaUser} from "react-icons/fa"
@@ -61,9 +81,10 @@ const Header:React.FC = () => {
               ))}
             </div>
             <div className="">{display()}</div>
+>>>>>>> 41ccae21f2a81a18f21768e4c2d771c76b2d1a42
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
