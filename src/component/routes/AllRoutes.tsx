@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Shop from "../pages/Shop";
 import Contact from "../pages/Contact";
 import Cart from "../pages/Cart";
+import MainAuthPage from "../pages/AuthPage/MainAuthPage";
 
 export const Index = createBrowserRouter([
     {
@@ -26,8 +27,12 @@ export const Index = createBrowserRouter([
             {
                 path: "cart",
                 element: <Cart/>
-            },
+            }
         ]
     },
+    {
+        path:"/auth-page",
+        element:<MainAuthPage/>
+    }
     
 ])
