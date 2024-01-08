@@ -1,15 +1,40 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { alls } from "../../../data";
-
+// import { useState } from "react";
 const DetailPage = () => {
-  console.log(alls[0]?.name)
+ 
+//   const [single , setSingle] = useState()
+// const {id} = useParams()
+
+//   const getSelectedInfo = async() =>{
+//     await alls(id).then((res)=>{
+//       console.log(res)
+//       setSingle(res?.)
+//     })
+//   }
+
+  // console.log(getSelectedInfo)
+  const { id } = useParams();
+  const itemId = parseInt(id, 10); // Convert id to integer
+
+  const getItemById = (id:any) => {
+    return alls.find((item) => item.id === itemId);
+  };
+  console.log(itemId)
+
+  const selectedObject:number = getItemById(itemId);
+
+  if (!selectedObject) {
+    return <div>Item not found</div>;
+  }
+
   return (
     <div className="flex items-center justify-center mb-[20px]">
    
       <div className="w-[85%] py-[20px] mt-[30px]  bg-gray-300 rounded-[20px] flex justify-around items-center mainDefaultStyle">
         <div className="w-[40%] p-[20px] rounded-[10px]  bg-gray-200 flex justify-center items-center detailImageHolder ">
           <img
-            src= {alls?.image}
+            src= {selectedObject?.image}
             alt=""
             className="w-[80%] h-[40%] rounded-[10px] object-cover detailImage"
           />
@@ -20,10 +45,10 @@ const DetailPage = () => {
             <p className="font-semi-bold text-xl text-black ">
               {alls?.name}
             </p>
-            <p className="font-bold text-4xl detailInfo1 ">{alls?.name} </p>
+            <p className="font-bold text-4xl detailInfo1 ">{selectedObject?.name} </p>
             <div className="flex flex-wrap gap-[20px]">
               <p className="font-semi-bold text-grey text-[15px] line-through">
-                <span className="text-grey  text-xl ">{alls?.price}</span>
+                <span className="text-grey  text-xl ">{selectedObject?.price}</span>
               </p>
               {/* <p className="font-semi-bold text-grey text-[15px]">
                 <span className=" text-[#E5774B]  text-xl ">₦: 200</span>
