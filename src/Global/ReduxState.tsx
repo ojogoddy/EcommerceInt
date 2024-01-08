@@ -8,7 +8,7 @@ export interface userData {
   _id?: string;
 }
 
-interface cartData {
+export interface cartData {
 id:number,
 name : string,
 image: string,
