@@ -9,7 +9,7 @@ export interface userData {
 }
 
 interface cartData {
-  title: string;
+  name: string;
   description: string;
   price: number;
   category: string;

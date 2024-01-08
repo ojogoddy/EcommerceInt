@@ -1,19 +1,11 @@
 import { NavLink, useParams } from "react-router-dom";
 import { alls } from "../../../data";
+import { UseAppDispatch } from "../../../Global/Store";
+import { addToCart } from "../../../Global/ReduxState";
 // import { useState } from "react";
 const DetailPage = () => {
  
-//   const [single , setSingle] = useState()
-// const {id} = useParams()
-
-//   const getSelectedInfo = async() =>{
-//     await alls(id).then((res)=>{
-//       console.log(res)
-//       setSingle(res?.)
-//     })
-//   }
-
-  // console.log(getSelectedInfo)
+  const dispatch = UseAppDispatch();
   const { id } = useParams();
   const itemId = parseInt(id, 10); // Convert id to integer
 
@@ -22,7 +14,7 @@ const DetailPage = () => {
   };
   console.log(itemId)
 
-  const selectedObject:number = getItemById(itemId);
+  const selectedObject = getItemById(itemId);
 
   if (!selectedObject) {
     return <div>Item not found</div>;
@@ -70,7 +62,9 @@ const DetailPage = () => {
 
           <div className="w-[90%]   flex flex-col  justify-center detailFunction mt-[50px]">
             <NavLink to="/cart">
-              <button className="w-[150px] h-[45px] bg-[#4DC4CC] text-white rounded-[8px] font-bold ">
+              <button   onClick={() => {
+                dispatch(addToCart(selectedObject?.data?.data));
+              }} className="w-[150px] h-[45px] bg-[#4DC4CC] text-white rounded-[8px] font-bold ">
                 Add to Cart
               </button>
             </NavLink>
