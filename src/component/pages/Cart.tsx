@@ -1,29 +1,12 @@
 import {Link} from "react-router-dom"
 import { FaAngleRight } from "react-icons/fa";
-import a from "../../assets/a.jpeg"
-import b from "../../assets/b.jpeg"
+import { useAppSelector } from "../../Global/Store";
 
 const Cart = () => {
 
-  const cartList:any = [
-    {
-      id: 1,
-      product: a,
-      name: "Gold Watch",
-      price: "$10",
-      quantity: "1",
-      total: "$10",
-    },
-    {
-      id: 2,
-      product: b,
-      name: "Drop Pendant Necklace",
-      price: "$10",
-      quantity: "1",
-      total: "$10",
-    },
-  ]
+
  
+  const readCart = useAppSelector((state) => state.cart)
 
   return (
     <div className="px-[9rem] sm:px-[3rem] ">
@@ -61,19 +44,19 @@ const Cart = () => {
         </div>
       </div>
       <div className="">
-        {cartList?.map((prop:any)=>(
+        {readCart?.map((prop)=>(
           <div className="" key={prop.id}>
 <div className="flex items-center sm:items-start justify-between px-[5rem]  border-b-2 py-3 sm:px-0">
         <div className=" text-[1.2rem] sm:text-[1rem] flex items-center sm:flex-col gap-x-3 sm:items-start">
           <div className=" w-[100px] h-[100px]">
-            <img src={prop.product} alt="" />
+            <img src={prop.image} alt="" />
           </div>
           {prop.name}
         </div>
         <div className="flex items-center gap-x-12 sm:gap-x-2">
           <div className="">{prop.price}</div>
-          <div className="border-[1px] rounded-3xl px-6 py-2 ">{prop.quantity}</div>
-          <div className="">{prop.total}</div>
+          <div className="border-[1px] rounded-3xl px-6 py-2 ">{prop.cartQuantity}</div>
+          <div className="">${prop.price * prop.cartQuantity} </div>
         </div>
       </div>
           </div>

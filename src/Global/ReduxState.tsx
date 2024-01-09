@@ -12,7 +12,7 @@ export interface cartData {
 id:number,
 name : string,
 image: string,
-price : string
+price : number
 cartQuantity: number;
 }
 

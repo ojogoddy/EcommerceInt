@@ -1,10 +1,11 @@
 import { NavLink, useParams } from "react-router-dom";
 import { alls } from "../../../data";
-// import { UseAppDispatch } from "../../../Global/Store";
+import { addToCart } from "../../../Global/ReduxState";
+import { UseAppDispatch } from "../../../Global/Store";
 // import { addToCart } from "../../../Global/ReduxState";
 const DetailPage = () => {
  
-  // const dispatch = UseAppDispatch();
+  const dispatch = UseAppDispatch();
   const { id } = useParams();
   const itemId = id?parseInt(id, 10): NaN; // Convert id to integer
 
@@ -64,7 +65,8 @@ const DetailPage = () => {
           <div className="w-[90%]   flex flex-col  justify-center detailFunction mt-[50px]">
             <NavLink to="/cart">
               <button   onClick={() => {
-                // dispatch(addToCart(selectedObject));
+                dispatch(addToCart(selectedObject));
+                console.log("this is selectedObject" ,selectedObject)
               }} className="w-[150px] h-[45px] bg-[#4DC4CC] text-white rounded-[8px] font-bold ">
                 Add to Cart
               </button>
