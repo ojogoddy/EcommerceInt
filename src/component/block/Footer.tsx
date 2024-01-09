@@ -6,7 +6,7 @@ import { TiSocialGooglePlus } from "react-icons/ti";
 const Footer = () => {
   return (
     <div className="mt-[5rem]">
-      <div className='flex items-center justify-between px-[9rem] py-[3rem] border-t-[1px] border-gray-300'>
+      <div className='flex items-center justify-between px-[9rem] py-[3rem] border-t-[1px] border-gray-300 sm:flex-col sm:space-y-5 sm:px-[2rem] md:px-[3rem]'>
         <div className=" flex items-center gap-x-6">
           <div className=" cursor-pointer">POLICY</div>
           <div className=" cursor-pointer">TERMS & CONDITIONS</div>
